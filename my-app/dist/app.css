@@ -13,7 +13,7 @@
 
 body .g-container .g-navbar {
   background-color: #101010;
-  width: 100vw;
+  width: 100%;
   height: 50px;
 }
 
@@ -24,7 +24,7 @@ body .g-container .g-row {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
-  width: 100vw;
+  width: 100%;
 }
 
 body .g-container .g-row .g-row-container .g-prod-info .g-img {
@@ -59,6 +59,53 @@ body .g-container .g-row .g-row-container .g-prod-info .g-jumbo .g-offer {
 body .g-container .g-subnav {
   background-color: #eaeaea;
   height: 50px;
-  width: 100vw;
+  width: 100%;
+}
+
+body .g-container .row2 {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #101010;
+  color: white;
+  width: 100%;
+}
+
+body .g-container .row2 .row2-container .image-video {
+  content: "";
+  display: table;
+  clear: both;
+  position: relative;
+}
+
+body .g-container .row2 .row2-container .image-video .border-corel {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+body .g-container .row2 .row2-container .image-video .face-corel {
+  width: 100%;
+  float: left;
+  border-radius: 15px;
+}
+
+body .g-container .row3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+body .g-container .row3 .slider {
+  width: 100%;
+  height: 100px;
+  background: #d3d3d3;
+}
+
+body .g-container .row3 .slider::-moz-range-thumb {
+  width: 2px;
+  height: 100px;
+  background: #4CAF50;
+  cursor: ew-resize;
 }
 
