@@ -1,4 +1,6 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+
+700&display=swap);* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,6 +13,17 @@
   padding: 5px;
 }
 
+.btn-blu {
+  background-color: #009cff;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 body .g-container {
   display: flex;
   flex-direction: column;
@@ -21,6 +34,27 @@ body .g-container .g-navbar {
   background-color: #101010;
   width: 100%;
   height: 50px;
+}
+
+body .g-container .g-navbar .g-navcontainer {
+  display: flex;
+  align-items: center;
+}
+
+body .g-container .g-navbar .g-navcontainer .hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 42px;
+  height: 32px;
+}
+
+body .g-container .g-navbar .g-navcontainer .hamburger .g-icon-bar {
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  margin-top: 4px;
+  background-color: #fff;
 }
 
 body .g-container .g-row {
@@ -50,13 +84,6 @@ body .g-container .g-row .g-row-container .g-prod-info .g-jumbo img {
   height: auto;
 }
 
-body .g-container .g-row .g-row-container .g-prod-info .g-jumbo button {
-  background-color: #009cff;
-  color: white;
-  border: none;
-  padding: 5px;
-}
-
 body .g-container .g-row .g-row-container .g-prod-info .g-jumbo .g-offer {
   padding: 15px;
   background-color: white;
@@ -72,9 +99,14 @@ body .g-container .row2 {
   content: "";
   display: table;
   clear: both;
+  text-align: center;
   background-color: #101010;
   color: white;
   width: 100%;
+}
+
+body .g-container .row2 .row2-container h2 {
+  font-size: 26px;
 }
 
 body .g-container .row2 .row2-container .image-video {
@@ -100,6 +132,7 @@ body .g-container .row3 {
   content: "";
   display: table;
   clear: both;
+  text-align: center;
 }
 
 body .g-container .row3 .row3-container {
@@ -107,6 +140,10 @@ body .g-container .row3 .row3-container {
   padding-bottom: 30px;
   width: 100%;
   background-color: white;
+}
+
+body .g-container .row3 .row3-container h2 {
+  font-size: 26px;
 }
 
 body .g-container .row3 .row3-container .slider-container {
@@ -147,7 +184,7 @@ body .g-container .bcg-image1 {
   position: fixed;
   width: 100vw;
   height: 550px;
-  background-position: bottom;
+  background-position: -480px bottom;
   z-index: -1;
   bottom: 0;
 }
