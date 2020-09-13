@@ -3,3 +3,83 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.btn-grey{
+    @include btnGrey;
+}
+
+
+body{
+
+
+    .g-container{
+        .g-navbar{
+            background-color: $black;
+            width: $fw;
+            height: 50px;
+        }
+        .g-row{
+            @include clearfix;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: white;
+            width: $fw;
+            .g-row-container{
+
+                .g-prod-info{
+
+
+                    span{
+
+                    }
+                    .g-img{
+                        @include flexRowCen;
+                        img{
+
+                        }
+                    }
+
+                    h1{
+
+                    }
+                    .g-ul{
+
+
+                        li{
+
+                        }
+                    }
+                    button{
+
+                    }
+                    .g-jumbo{
+                        background-color: #eaeaea;
+                        @include p15;
+
+                        img{
+                            float: right;
+                            width: 60px;
+                            height: auto;
+                        }
+
+                        button{
+                            @include btnBlue;
+                        }
+                        .g-offer{
+                            @include p15;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .g-subnav{
+            background-color: $grey;
+            height: 50px;
+            width: $fw;
+        }
+
+
+
+    }
+}

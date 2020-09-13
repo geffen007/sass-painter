@@ -3,3 +3,44 @@
     display: table;
     clear: both;
 }
+
+//flex
+@mixin flexColCen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexRowCen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+//Button
+@mixin btnGrey{
+    border: 1px solid #cccccc;
+    background-color: white;
+    color: #333;
+    padding: 5px;
+
+}
+
+@mixin btnBlue{
+    background-color: #009cff;
+    color: white;
+    border: none;
+    padding:5px;
+}
+
+//padding
+
+@mixin p5{
+    padding: 5px;
+}
+@mixin p10{
+    padding: 10px;
+}
+@mixin p15{
+    padding: 15px;
+}
