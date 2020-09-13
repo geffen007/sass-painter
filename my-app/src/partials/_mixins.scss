@@ -23,7 +23,6 @@
     background-color: white;
     color: #333;
     padding: 5px;
-
 }
 
 @mixin btnBlue{
@@ -43,4 +42,9 @@
 }
 @mixin p15{
     padding: 15px;
+}
+
+@mixin p3030{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }

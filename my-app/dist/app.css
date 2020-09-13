@@ -11,6 +11,12 @@
   padding: 5px;
 }
 
+body .g-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body .g-container .g-navbar {
   background-color: #101010;
   width: 100%;
@@ -94,28 +100,32 @@ body .g-container .row3 {
   content: "";
   display: table;
   clear: both;
+}
+
+body .g-container .row3 .row3-container {
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
+  background-color: white;
 }
 
-body .g-container .row3 .slider-container {
+body .g-container .row3 .row3-container .slider-container {
   width: 100%;
   height: auto;
   position: relative;
 }
 
-body .g-container .row3 .slider-container img {
+body .g-container .row3 .row3-container .slider-container img {
   width: 100%;
   top: 0px;
 }
 
-body .g-container .row3 .slider-container .after {
+body .g-container .row3 .row3-container .slider-container .after {
   position: absolute;
   left: 0;
 }
 
-body .g-container .row3 .slider-container .slider {
+body .g-container .row3 .row3-container .slider-container .slider {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -124,11 +134,25 @@ body .g-container .row3 .slider-container .slider {
   z-index: 1;
 }
 
-body .g-container .row3 .slider-container .slider::-moz-range-thumb {
-  width: 2px;
+body .g-container .row3 .row3-container .slider-container .slider::-moz-range-thumb {
+  width: 3px;
   height: 100%;
   background-color: #101010;
   cursor: ew-resize;
   z-index: 1;
+}
+
+body .g-container .bcg-image1 {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  position: fixed;
+  width: 100vw;
+  height: 550px;
+  background-position: bottom;
+  z-index: -1;
+  bottom: 0;
+}
+
+body .g-container .content {
+  height: 550px;
 }
 
