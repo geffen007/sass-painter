@@ -23,6 +23,9 @@
     background-color: white;
     color: #333;
     padding: 5px;
+    &:hover{
+        background-color: darken(white, 20);
+    }
 }
 
 @mixin btnBlue{
@@ -30,6 +33,9 @@
     color: white;
     border: none;
     padding:5px;
+    &:hover{
+        background-color: lighten(#009cff, 20);
+    }
 }
 
 //padding

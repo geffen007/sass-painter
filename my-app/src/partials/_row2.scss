@@ -1,0 +1,28 @@
+.row2 {
+    @include clearfix;
+    text-align: center;
+    background-color: $black;
+    color: white;
+    width: 100%;
+    .row2-container{
+        h2{
+            font-size: 26px;
+        }
+        p{
+        }
+        .image-video{
+            @include clearfix;
+            position: relative;
+            .border-corel{
+                position: absolute;
+                width: 100%;
+                left:0;
+            }
+            .face-corel{
+                width: 99%;
+                float: left;
+                border-radius: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.row1{
+    @include clearfix;
+    @include p3030;
+    background-color: white;
+    width: 100%;
+    .row1-container{
+        .g-prod-info{
+            span{
+            }
+            .g-img{
+                @include flexRowCen;
+                img{
+                }
+            }
+            h1{
+            }
+            .g-ul{
+                li{
+                }
+            }
+            button{
+            }
+            .g-jumbo{
+                background-color: #eaeaea;
+                @include p15;
+                img{
+                    float: right;
+                    width: 60px;
+                    height: auto;
+                }
+                button{
+                }
+                .g-offer{
+                    @include p15;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
