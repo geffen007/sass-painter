@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+    .row1{
+        background-color: $black;
+        color: white;
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 460px;
+        .row1-container{
+            .g-prod-info{
+                .g-jumbo{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .row2 {
+        background-position: bottom;
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
+        background-repeat: no-repeat;
+    }
+    .bcg-image1 {
+        background-position: center;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .row1{
+        background-position: center;
+    }
+}

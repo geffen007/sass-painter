@@ -1,9 +1,6 @@
 .row2 {
-    @include clearfix;
-    text-align: center;
     background-color: $black;
     color: white;
-    width: 100%;
     .row2-container{
         h2{
             font-size: 26px;

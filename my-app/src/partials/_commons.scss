@@ -20,7 +20,8 @@ h1 {
 body{
     font-family: 'Montserrat', sans-serif;
     .g-container{
-        @include flexColCen;
+        width: 100vw;
+
 
     }
 }

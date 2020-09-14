@@ -33,125 +33,20 @@ body {
 }
 
 body .g-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-body .g-container .g-subnav {
-  background-color: #eaeaea;
-  height: 50px;
-  width: 100%;
-}
-
-body .g-container .row2 {
-  content: "";
-  display: table;
-  clear: both;
-  text-align: center;
-  background-color: #101010;
-  color: white;
-  width: 100%;
-}
-
-body .g-container .row2 .row2-container h2 {
-  font-size: 26px;
-}
-
-body .g-container .row2 .row2-container .image-video {
-  content: "";
-  display: table;
-  clear: both;
-  position: relative;
-}
-
-body .g-container .row2 .row2-container .image-video .border-corel {
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-
-body .g-container .row2 .row2-container .image-video .face-corel {
-  width: 99%;
-  float: left;
-  border-radius: 15px;
-}
-
-body .g-container .row3 {
-  content: "";
-  display: table;
-  clear: both;
-  text-align: center;
-}
-
-body .g-container .row3 .row3-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-  background-color: white;
-}
-
-body .g-container .row3 .row3-container h2 {
-  font-size: 26px;
-}
-
-body .g-container .row3 .row3-container .slider-container {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-body .g-container .row3 .row3-container .slider-container img {
-  width: 100%;
-  top: 0px;
-}
-
-body .g-container .row3 .row3-container .slider-container .after {
-  position: absolute;
-  left: 0;
-}
-
-body .g-container .row3 .row3-container .slider-container .slider {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 1;
-}
-
-body .g-container .row3 .row3-container .slider-container .slider::-moz-range-thumb {
-  width: 3px;
-  height: 100%;
-  background-color: #101010;
-  cursor: ew-resize;
-  z-index: 1;
-}
-
-body .g-container .bcg-image1 {
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
   width: 100vw;
-  height: 550px;
-  position: relative;
-  background-attachment: fixed;
-  background-position: -380px bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .g-navbar {
   background-color: #101010;
-  width: 100%;
-  height: 50px;
 }
 
-.g-navbar .g-navcontainer {
-  height: 100%;
+.g-navbar .g-nav-container {
+  height: 50px;
   display: flex;
   align-items: center;
 }
 
-.g-navbar .g-navcontainer .hamburger {
+.g-navbar .g-nav-container .hamburger {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,7 +55,7 @@ body .g-container .bcg-image1 {
   height: 32px;
 }
 
-.g-navbar .g-navcontainer .hamburger .g-icon-bar {
+.g-navbar .g-nav-container .hamburger .g-icon-bar {
   width: 22px;
   height: 2px;
   border-radius: 1px;
@@ -169,16 +64,12 @@ body .g-container .bcg-image1 {
 }
 
 .row1 {
-  content: "";
-  display: table;
-  clear: both;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: white;
-  width: 100%;
 }
 
-.row1 .row1-container .g-prod-info .g-img {
+.row1 .row1-container .g-prod-info .row1left .g-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -198,5 +89,133 @@ body .g-container .bcg-image1 {
 .row1 .row1-container .g-prod-info .g-jumbo .g-offer {
   padding: 15px;
   background-color: white;
+}
+
+.g-subnav {
+  background-color: #eaeaea;
+  height: 50px;
+  width: 100%;
+}
+
+.row2 {
+  background-color: #101010;
+  color: white;
+}
+
+.row2 .row2-container h2 {
+  font-size: 26px;
+}
+
+.row2 .row2-container .image-video {
+  content: "";
+  display: table;
+  clear: both;
+  position: relative;
+}
+
+.row2 .row2-container .image-video .border-corel {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.row2 .row2-container .image-video .face-corel {
+  width: 99%;
+  float: left;
+  border-radius: 15px;
+}
+
+.row3 {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+.row3 .row3-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: white;
+}
+
+.row3 .row3-container h2 {
+  font-size: 26px;
+}
+
+.row3 .row3-container .slider-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.row3 .row3-container .slider-container img {
+  width: 100%;
+  top: 0px;
+}
+
+.row3 .row3-container .slider-container .after {
+  position: absolute;
+  left: 0;
+}
+
+.row3 .row3-container .slider-container .slider {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.row3 .row3-container .slider-container .slider::-moz-range-thumb {
+  width: 3px;
+  height: 100%;
+  background-color: #101010;
+  cursor: ew-resize;
+  z-index: 1;
+}
+
+.bcg-image1 {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-02.jpg");
+  width: 100vw;
+  height: 550px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: -380px bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .row1 {
+    background-color: #101010;
+    color: white;
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 460px;
+  }
+
+  .row1 .row1-container .g-prod-info .g-jumbo {
+    background-color: black;
+    color: white;
+  }
+
+  .row2 {
+    background-position: bottom;
+    background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .bcg-image1 {
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .row1 {
+    background-position: center;
+  }
 }
 
