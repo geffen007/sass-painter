@@ -21,7 +21,6 @@
             .after{
                 position: absolute;
                 left: 0;
-                // clip-path: polygon(0 0%, 96% 0%, 96% 100%, 0% 100%);
             }
             .slider {
                 width: 100%;
@@ -35,6 +34,7 @@
                 width: 3px;
                 height: 100%;
                 background-color: $black;
+                border: none;
                 cursor: ew-resize;
                 z-index:1;
             }

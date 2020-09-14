@@ -8,3 +8,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bcg-image2{
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
+    width: $fw;
+    height: 550px;
+    background-position: center bottom;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

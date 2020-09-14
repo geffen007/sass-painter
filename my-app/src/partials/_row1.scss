@@ -22,10 +22,19 @@
             }
 
             .g-jumbo{
+                @include flex(column, flex-start, space-between);
+                padding-top: 55px;
+                padding-bottom: 55px;
+                position: relative;
                 background-color: #eaeaea;
-                @include p15;
+
+                span{
+                    font-size: 20px;
+                }
                 img{
-                    float: right;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
                     width: 60px;
                     height: auto;
                 }

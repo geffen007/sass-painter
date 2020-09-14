@@ -43,10 +43,12 @@ body .g-container {
 .g-navbar .g-nav-container {
   height: 50px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.g-navbar .g-nav-container .hamburger {
+.g-navbar .g-nav-container .hamburger .ham {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +57,7 @@ body .g-container {
   height: 32px;
 }
 
-.g-navbar .g-nav-container .hamburger .g-icon-bar {
+.g-navbar .g-nav-container .hamburger .ham .g-icon-bar {
   width: 22px;
   height: 2px;
   border-radius: 1px;
@@ -76,12 +78,24 @@ body .g-container {
 }
 
 .row1 .row1-container .g-prod-info .g-jumbo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  position: relative;
   background-color: #eaeaea;
-  padding: 15px;
+}
+
+.row1 .row1-container .g-prod-info .g-jumbo span {
+  font-size: 20px;
 }
 
 .row1 .row1-container .g-prod-info .g-jumbo img {
-  float: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   width: 60px;
   height: auto;
 }
@@ -100,6 +114,10 @@ body .g-container {
 .row2 {
   background-color: #101010;
   color: white;
+}
+
+.row2 .row2-container {
+  text-align: center;
 }
 
 .row2 .row2-container h2 {
@@ -172,6 +190,7 @@ body .g-container {
   width: 3px;
   height: 100%;
   background-color: #101010;
+  border: none;
   cursor: ew-resize;
   z-index: 1;
 }
@@ -187,6 +206,17 @@ body .g-container {
   background-size: cover;
 }
 
+.bcg-image2 {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  width: 100vw;
+  height: 550px;
+  background-position: center bottom;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
   .row1 {
     background-color: #101010;
@@ -198,8 +228,13 @@ body .g-container {
   }
 
   .row1 .row1-container .g-prod-info .g-jumbo {
+    height: 400px;
     background-color: black;
     color: white;
+  }
+
+  .row1 .row1-container .g-prod-info .g-jumbo .g-offer {
+    color: black;
   }
 
   .row2 {

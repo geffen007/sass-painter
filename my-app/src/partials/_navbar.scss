@@ -3,19 +3,19 @@
 
     .g-nav-container{
         height: 50px;
-        display: flex;
-        align-items: center;
+        @include flex(row, center, flex-start);
         .hamburger{
-            @include flexColCen;
-            justify-content: center;
-            width: 42px;
-            height: 32px;
-            .g-icon-bar{
-                width: 22px;
-                height: 2px;
-                border-radius: 1px;
-                margin: 2px;
-                background-color: #fff;
+            .ham{
+                @include flex(column, center, center);
+                width: 42px;
+                height: 32px;
+                .g-icon-bar{
+                    width: 22px;
+                    height: 2px;
+                    border-radius: 1px;
+                    margin: 2px;
+                    background-color: #fff;
+                }
             }
         }
     }

@@ -9,8 +9,12 @@
         .row1-container{
             .g-prod-info{
                 .g-jumbo{
+                    height: 400px;
                     background-color: black;
                     color: white;
+                    .g-offer{
+                        color: black;
+                    }
                 }
             }
         }
