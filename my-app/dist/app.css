@@ -74,7 +74,12 @@ body .g-container {
 .row1 .row1-container .g-prod-info .row1left .g-img {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
+}
+
+.row1 .row1-container .g-prod-info .row1left .g-ul ul {
+  list-style: none;
 }
 
 .row1 .row1-container .g-prod-info .g-jumbo {

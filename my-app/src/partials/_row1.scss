@@ -7,15 +7,19 @@
                 span{
                 }
                 .g-img{
-                    @include flexRowCen;
+                    @include flex(row, center, center);
                     img{
                     }
                 }
                 h1{
                 }
                 .g-ul{
-                    li{
+                    ul{
+                        list-style: none;
+                        li{
+                        }
                     }
+
                 }
                 button{
                 }
